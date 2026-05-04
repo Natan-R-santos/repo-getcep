@@ -1,0 +1,103 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-top: 40px;
+    max-width: 400px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Container principal */
+div {
+    display: flex;
+    flex-direction: column; /* chave aqui */
+    align-items: center;
+    gap: 15px;
+}
+
+/* Linha input + botão */
+div input,
+div button {
+    display: inline-block;
+}
+
+/* Agrupamento input + botão */
+div input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    width: 200px;
+    transition: 0.2s;
+}
+
+div input:focus {
+    border-color: #007bff;
+}
+
+/* Botão */
+div button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+div button:hover {
+    background-color: #0056b3;
+}
+
+/* Lista de resultado */
+ul {
+    list-style: none;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    color: #777;
+}
