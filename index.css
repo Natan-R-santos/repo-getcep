@@ -1,11 +1,8 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Body */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f6f8;
@@ -16,8 +13,6 @@ body {
     justify-content: space-between;
     height: 100vh;
 }
-
-/* Header */
 header {
     text-align: center;
     margin-top: 40px;
@@ -32,22 +27,17 @@ header p {
     font-size: 0.9rem;
     color: #666;
 }
-
-/* Container principal */
 div {
     display: flex;
-    flex-direction: column; /* chave aqui */
+    flex-direction: column;
     align-items: center;
     gap: 15px;
 }
-
-/* Linha input + botão */
 div input,
 div button {
     display: inline-block;
 }
 
-/* Agrupamento input + botão */
 div input {
     padding: 10px;
     border: 1px solid #ccc;
@@ -61,7 +51,6 @@ div input:focus {
     border-color: #007bff;
 }
 
-/* Botão */
 div button {
     padding: 10px 15px;
     border: none;
@@ -76,7 +65,6 @@ div button:hover {
     background-color: #0056b3;
 }
 
-/* Lista de resultado */
 ul {
     list-style: none;
     background: white;
@@ -94,8 +82,6 @@ ul li {
 ul li:last-child {
     margin-bottom: 0;
 }
-
-/* Footer */
 footer {
     margin-bottom: 20px;
     font-size: 0.8rem;
