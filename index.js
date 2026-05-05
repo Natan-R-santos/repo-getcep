@@ -2,6 +2,7 @@ const input=document.getElementById("input");
 const button=document.getElementById("button");
 const ul=document.getElementById("lista");
 const rua=document.getElementById("Rua");
+const buttonDelete=document.getElementById("buttonDelete");
 const cidade=document.getElementById("Cidade");
 const estado=document.getElementById("Estado");
 async function buscarInfo() {
@@ -28,4 +29,10 @@ async function buscarInfo() {
         console.error("Erro ao buscar as Infos.", error)
     }
 };
+function limparLi(){
+    rua.innerHTML=`Rua -`;
+    cidade.innerHTML=`Cidade -`;
+    estado.innerHTML=`Estado -`;
+};
+buttonDelete.addEventListener("click",limparLi)
 button.addEventListener("click", buscarInfo);
